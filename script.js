@@ -24,7 +24,7 @@ const sendChatBtn = document.querySelector("#send-button")
 const chatInput = document.querySelector("#input-text")
 const chatBox = document.querySelector(".chatbox")
 
-const API_KEY = "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"
+const API_KEY = "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"
 
 let userMessage;
 
