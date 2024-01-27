@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400; 500; 600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.logo{
+    height: 10vb;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 600px 500px;
+    justify-content: center;
+    column-gap: 100px;
+    margin-top: 100px;
+    height: 100vh;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.header-about{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-about{
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Kanit', sans-serif;
+    background: -webkit-linear-gradient(63.87deg,#91cefd 2.04%,#91cdfd 2.69%,#92ccfd 3.34%,#92cafc 4%,#93c9fc 4.65%,#93c8fc 5.3%,#93c8fc 0,#93c7fc 5.95%,#94c6fc 6.6%,#94c5fc 7.26%,#95c4fc 7.91%,#95c3fc 8.56%,#95c3fc 0,#95c2fc 9.21%,#96c1fc 9.86%,#96c0fb 10.52%,#97bffb 11.17%,#97befb 11.82%,#97befb 0,#97bdfb 12.47%,#98bcfb 13.12%,#98bbfb 13.78%,#99bafb 14.43%,#99b9fb 15.08%,#99b9fb 0,#99b8fb 15.73%,#9ab7fb 16.38%,#9ab7fa 17.04%,#9bb6fa 17.69%,#9bb5fa 18.34%,#9bb5fa 0,#9bb5fa 0,#9bb5fa 0,#9bb5fa 0,#9bb5fa 0,#9bb5fa 0,#9bb5fa 0,#9bb4fa 18.99%,#9cb3fa 19.64%,#9cb3f9 20.3%,#9db2f9 20.95%,#9db1f9 21.6%,#9db1f9 0,#9db0f9 22.25%,#9eaff9 22.91%,#9eaff9 23.56%,#9faef9 24.21%,#9fadf9 24.86%,#9fadf9 0,#9facf9 25.51%,#9facf9 26.17%,#a0abf8 26.82%,#a0abf8 27.47%,#a0aaf8 28.12%,#a0aaf8 0,#a0a9f8 28.77%,#a1a9f8 29.43%,#a1a8f8 30.08%,#a2a8f8 30.73%,#a2a7f8 31.38%,#a2a7f8 0,#a2a6f8 32.03%,#a3a6f8 32.69%,#a3a5f7 33.34%,#a4a5f7 33.99%,#a4a4f7 34.64%,#a4a4f7 0,#a4a4f7 0,#a4a4f7 0,#a4a4f7 0,#a4a4f7 0,#a4a4f7 0,#a4a4f7 0,#a5a4f7 35.29%,#a7a5f7 35.95%,#a8a5f7 36.6%,#aaa6f7 37.25%,#aba6f7 37.9%,#aba6f7 0,#aca6f7 38.55%,#ada7f7 39.21%,#afa7f6 39.86%,#b0a8f6 40.51%,#b1a8f6 41.16%,#b1a8f6 0,#b2a8f6 41.81%,#b3a8f6 42.47%,#b5a9f6 43.12%,#b6a9f6 43.77%,#b7a9f6 44.42%,#b7a9f6 0,#b8a9f6 45.08%,#b9aaf6 45.73%,#bbaaf5 46.38%,#bcabf5 47.03%,#bdabf5 47.68%,#bdabf5 0,#beabf5 48.34%,#bfacf5 48.99%,#c0acf5 49.64%,#c1adf5 50.29%,#c2adf5 50.94%,#c2adf5 0,#c2adf5 0,#c2adf5 0,#c2adf5 0,#c2adf5 0,#c2adf5 0,#c2adf5 0,#c3adf5 51.6%,#c4aef5 52.25%,#c5aef5 52.9%,#c6aff5 53.55%,#c7aff5 54.2%,#c7aff5 0,#c8aff5 54.86%,#c9aff5 55.51%,#cab0f4 56.16%,#cbb0f4 56.81%,#ccb0f4 57.46%,#ccb0f4 0,#cdb0f4 58.12%,#ceb1f4 58.77%,#ceb1f4 59.42%,#cfb2f4 60.07%,#d0b2f4 60.72%,#d0b2f4 0,#d1b2f4 61.38%,#d2b2f4 62.03%,#d3b3f3 62.68%,#d4b3f3 63.33%,#d5b3f3 63.98%,#d5b3f3 0,#d6b3f3 64.64%,#d7b4f3 65.29%,#d7b4f3 65.94%,#d8b5f3 66.59%,#d9b5f3 67.24%,#d9b5f3 0,#d9b5f3 0,#d9b5f3 0,#d9b5f3 0,#d9b5f3 0,#d9b5f3 0,#d9b5f3 0,#dab5f3 67.9%,#dbb6f3 68.55%,#dbb6f3 69.2%,#dcb7f3 69.85%,#ddb7f3 70.51%,#ddb7f3 0,#deb7f3 71.16%,#dfb7f3 71.81%,#dfb8f3 72.46%,#e0b8f3 73.11%,#e1b8f3 73.77%,#e1b8f3 0,#e2b8f3 74.42%,#e2b9f3 75.07%,#e3b9f2 75.72%,#e3baf2 76.37%,#e4baf2 77.03%,#e4baf2 0,#e5baf2 77.68%,#e6baf2 78.33%,#e6bbf2 78.98%,#e7bbf2 79.63%,#e8bbf2 80.29%,#e8bbf2 0,#e9bbf2 80.94%,#e9bcf2 81.59%,#eabcf2 82.24%,#eabdf2 82.89%,#ebbdf2 83.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+main {
+    width: 80%;
+    max-width: 600px;
+    margin-left: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 200px; 
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #abe5fb;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #d6b3f3;
+    box-shadow: 0 0 5px #d6b3f3;
+}
+
+.prompt-label{
+     background: -webkit-linear-gradient(#69b6ff, #bf94ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    
+}
+
+video{
+    margin-right: 100px;
+}
+
+.send-button{
+    border-radius: 10px;
+    border: 2px solid #d6b2ff;
+    background-color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 6px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #924df8;
+}
+
+.send-button:hover{
+    transition: 500ms;
+    color: #fff;
+    background-color: #c089ff;
+    border: none;
+    cursor: pointer;
+}
+
+.chatbot .chatbox {
+    height: 510px;
+    overflow-y: auto;
+    padding: 30px 20px 70px;
+}
+
+.chatbox .chat {
+    display: flex;
+}
+
+.chatbox .chat p {
+    color:#fff;
+    max-width: 75%;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background: #724ae8;
+}
+
+.chatbox .outgoing{
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+
+.chatbox .incoming span {
+    height: 32px;
+    width: 32px;
+    color:#fff;
+    align-self: flex-end;
+    background: #724ae8;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+}
+
+.chatbox .incoming p {
+    color: #000;
+    background: #f2f2f2;
+    border-radius: 10px 10px 10px 0;
+}
