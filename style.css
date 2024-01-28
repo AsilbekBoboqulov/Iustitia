@@ -22,7 +22,7 @@ body {
     justify-content: center;
     column-gap: 100px;
     margin-top: 100px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 header {
@@ -41,7 +41,7 @@ header {
 }
 
 .text-about{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     line-height: 25px;
     font-family: 'Kanit', sans-serif;
@@ -154,4 +154,12 @@ video{
     color: #000;
     background: #f2f2f2;
     border-radius: 10px 10px 10px 0;
+}
+
+.ads{
+    margin-top: 100px;
+    margin-left: 70%;
+    font-size: 20px;
+    color: #2da1ff;
+    font-family: 'Kanit', sans-serif;
 }
